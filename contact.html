@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contact Silondis</title>
+<meta name="description" content="Contact Silondis Pharmacy, apply for a wholesale account, or send a tender enquiry.">
+<meta name="theme-color" content="#0E5A4A">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.page-hero{padding-block:64px 40px}
+@media (prefers-reduced-motion:no-preference){.page-hero .stack > *{animation:fadeUp .7s cubic-bezier(.2,.7,.2,1) both}.page-hero .stack > *:nth-child(2){animation-delay:.08s}.page-hero .stack > *:nth-child(3){animation-delay:.16s}}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:32px;align-items:start}
+@media (max-width:900px){.contact-grid{grid-template-columns:minmax(0,1fr)}}
+.tablist{display:flex;flex-wrap:wrap;gap:6px;padding:6px;border-radius:14px;background:var(--sunk)}
+.tablist [role=tab]{min-height:44px;padding:0 16px;border-radius:10px;border:0;background:transparent;font-weight:700;color:var(--muted);flex:1 1 auto}
+.tablist [role=tab][aria-selected=true]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.form-card{padding:28px;display:flex;flex-direction:column;gap:18px}
+@media (max-width:520px){.form-card{padding:20px}}
+.full{grid-column:1/-1}
+.sent{display:flex;gap:14px;align-items:flex-start;padding:18px;border-radius:12px;background:var(--green-soft);color:var(--green-deep)}
+.sent svg{stroke:var(--green-deep);flex-shrink:0}
+.info{display:flex;flex-direction:column;gap:14px}
+.info .card{padding:20px;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start}
+.info .ic{width:40px;height:40px;border-radius:11px;background:var(--green-soft);display:grid;place-items:center}
+.info .ic svg{stroke:var(--green)}
+.info b{display:block;margin-bottom:2px}
+.info p{color:var(--muted);font-size:14.5px}
+.copy{border:0;background:none;color:var(--green);font-weight:700;padding:4px 0;font-size:13.5px}
+.hours{width:100%;border-collapse:collapse;font-size:14px}
+.hours td{padding:6px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
+.check input{width:18px;height:18px;margin-top:2px;accent-color:var(--green)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html" aria-label="Silondis Pharmacy home">
+      <span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="logo-text"><b>Silondis</b><span>ሲሎንዲስ ፋርማሲ</span></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="app.html#shop">Shop</a>
+      <a href="index.html#pharmacies">For pharmacies</a>
+      <a href="index.html#traceability">Quality</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="lang-btn" type="button">አማርኛ</button>
+      <a class="btn primary sm" href="app.html#shop">Order now</a>
+      <button class="menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="container stack" style="gap:16px">
+    <span class="eyebrow">Contact</span>
+    <h1 class="h-xl" style="max-width:15ch">Talk to the Silondis team.</h1>
+    <p class="lead">Questions about an order, a wholesale account or a tender. A pharmacist or account manager replies within one working day.</p>
+  </div>
+</section>
+
+<section class="section tight" style="padding-top:0">
+  <div class="container contact-grid">
+    <div class="stack" data-tabs>
+      <div class="tablist" role="tablist" aria-label="What is it about">
+        <button role="tab" id="t-gen" aria-controls="f-gen" aria-selected="true">General question</button>
+        <button role="tab" id="t-wh" aria-controls="f-wh" aria-selected="false" tabindex="-1">Wholesale account</button>
+        <button role="tab" id="t-ten" aria-controls="f-ten" aria-selected="false" tabindex="-1">Tender enquiry</button>
+      </div>
+
+      <form class="card form-card" id="f-gen" role="tabpanel" aria-labelledby="t-gen" data-kind="general" novalidate>
+        <div class="stack" style="gap:4px"><h2 class="h-md">Send us a message</h2><p class="muted small">For medicine questions, include the medicine name and strength.</p></div>
+        <div class="form-grid">
+          <label class="f" for="g-name">Full name<input type="text" id="g-name" name="name" autocomplete="name" required></label>
+          <label class="f" for="g-phone">Phone number<input type="tel" id="g-phone" name="phone" autocomplete="tel" placeholder="09…" required></label>
+          <label class="f" for="g-email">Email (optional)<input type="email" id="g-email" name="email" autocomplete="email"></label>
+          <label class="f" for="g-topic">Topic<select id="g-topic" name="topic"><option>An order I placed</option><option>Is a medicine in stock?</option><option>Prescriptions</option><option>Delivery</option><option>Something else</option></select></label>
+          <label class="f full" for="g-msg">Message<textarea id="g-msg" name="message" required></textarea></label>
+        </div>
+        <button class="btn primary" type="submit" style="align-self:flex-start">Send message</button>
+        <div class="sent" hidden></div>
+      </form>
+
+      <form class="card form-card" id="f-wh" role="tabpanel" aria-labelledby="t-wh" data-kind="wholesale" hidden novalidate>
+        <div class="stack" style="gap:4px"><h2 class="h-md">Apply for a wholesale account</h2><p class="muted small">We supply licensed pharmacies, drug shops, clinics and hospitals. We verify your EFDA licence before the first order.</p></div>
+        <div class="form-grid">
+          <label class="f" for="w-biz">Business name<input type="text" id="w-biz" name="business" required></label>
+          <label class="f" for="w-type">Type of outlet<select id="w-type" name="type"><option>Pharmacy</option><option>Drug shop</option><option>Clinic</option><option>Hospital</option><option>NGO or programme</option></select></label>
+          <label class="f" for="w-lic">EFDA licence number<input type="text" id="w-lic" name="licence" required></label>
+          <label class="f" for="w-exp">Licence expiry (YYYY-MM)<input type="text" id="w-exp" name="licenceExpiry" placeholder="2027-06" inputmode="numeric" required></label>
+          <label class="f" for="w-area">Sub-city or town<input type="text" id="w-area" name="area" required></label>
+          <label class="f" for="w-tin">TIN<input type="text" id="w-tin" name="tin"></label>
+          <label class="f" for="w-contact">Contact person<input type="text" id="w-contact" name="contact" autocomplete="name" required></label>
+          <label class="f" for="w-phone">Phone number<input type="tel" id="w-phone" name="phone" autocomplete="tel" required></label>
+          <label class="f" for="w-vol">Expected monthly purchases<select id="w-vol" name="volume"><option>Under ETB 50,000</option><option>ETB 50,000 to 200,000</option><option>ETB 200,000 to 500,000</option><option>Over ETB 500,000</option></select></label>
+          <label class="f" for="w-credit">Payment preference<select id="w-credit" name="payment"><option>Pay on order</option><option>Credit, 15 days</option><option>Credit, 30 days</option></select></label>
+        </div>
+        <label class="check" for="w-ok"><input type="checkbox" id="w-ok" name="confirm" required>I confirm the licence details are correct and that we will only buy for licensed dispensing.</label>
+        <button class="btn primary" type="submit" style="align-self:flex-start">Submit application</button>
+        <div class="sent" hidden></div>
+      </form>
+
+      <form class="card form-card" id="f-ten" role="tabpanel" aria-labelledby="t-ten" data-kind="tender" hidden novalidate>
+        <div class="stack" style="gap:4px"><h2 class="h-md">Tender and institutional supply</h2><p class="muted small">Send the tender reference or your requirement list, and we will reply with availability and a quote.</p></div>
+        <div class="form-grid">
+          <label class="f" for="t-org">Organisation<input type="text" id="t-org" name="organisation" required></label>
+          <label class="f" for="t-ref">Tender or eGP reference (optional)<input type="text" id="t-ref" name="reference"></label>
+          <label class="f" for="t-name">Contact person<input type="text" id="t-name" name="name" autocomplete="name" required></label>
+          <label class="f" for="t-phone">Phone or email<input type="text" id="t-phone" name="phone" required></label>
+          <label class="f" for="t-close">Closing date (optional)<input type="text" id="t-close" name="closing" placeholder="YYYY-MM-DD"></label>
+          <label class="f" for="t-cold">Cold-chain items<select id="t-cold" name="cold"><option>No</option><option>Yes, 2 to 8 °C</option></select></label>
+          <label class="f full" for="t-msg">Products and quantities<textarea id="t-msg" name="message" placeholder="One line per product: generic name, strength, form, quantity" required></textarea></label>
+        </div>
+        <button class="btn primary" type="submit" style="align-self:flex-start">Send enquiry</button>
+        <div class="sent" hidden></div>
+      </form>
+      <p class="muted small">Demo build: messages and applications are saved in this browser only, and applications show in the back office for approval.</p>
+    </div>
+
+    <aside class="info" aria-label="Contact details">
+      <div class="card"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Phone and Telegram</b><p class="num" id="phone-text">[+251 phone number]</p><button class="copy" type="button" data-copy="phone-text">Copy number</button></div></div>
+      <div class="card"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><b>Email</b><p id="email-text">[orders@yourdomain]</p><button class="copy" type="button" data-copy="email-text">Copy address</button></div></div>
+      <div class="card"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><b>Branch and warehouse</b><p>[Street, sub-city]<br>Addis Ababa, Ethiopia</p><a class="small" href="https://www.google.com/maps/search/?api=1&query=Addis+Ababa" target="_blank" rel="noopener">Open in Google Maps</a></div></div>
+      <div class="card" style="grid-template-columns:1fr"><div><b style="margin-bottom:8px">Opening hours</b>
+        <table class="hours"><tbody><tr><td>Monday to Friday</td><td>[8:00 to 20:00]</td></tr><tr><td>Saturday</td><td>[8:00 to 18:00]</td></tr><tr><td>Sunday</td><td>[9:00 to 14:00]</td></tr><tr><td>Online orders</td><td>Any time</td></tr></tbody></table></div></div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="stack" style="gap:14px">
+        <a class="logo" href="index.html"><span class="logo-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><span class="logo-text"><b>Silondis</b><span>ሲሎንዲስ ፋርማሲ</span></span></a>
+        <p style="color:var(--band-muted);max-width:34ch">Retail pharmacy, wholesale supply and delivery in Ethiopia.</p>
+        <p class="small" style="color:var(--band-muted)">EFDA licence [number] · TIN [number]</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="app.html#shop">Order medicines</a></li><li><a href="app.html#track">Track an order</a></li><li><a href="index.html#traceability">Quality</a></li></ul></div>
+      <div><h4>Business</h4><ul><li><a href="app.html#b2b">Wholesale portal</a></li><li><a href="contact.html#wholesale">Open an account</a></li><li><a href="contact.html#tender">Tenders</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="app.html#office">Staff back office</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>© <span data-year></span> Silondis. All rights reserved.</span><span>Demo build: sample data, payments simulated.</span></div>
+  </div>
+</footer>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/i18n-am.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+(function(){
+  'use strict';
+  // open the tab named in the link (#wholesale, #tender)
+  function openFromHash(){ var map = {wholesale:'t-wh', tender:'t-ten', general:'t-gen'}; var id = map[(location.hash||'').slice(1)]; if (id) document.getElementById(id).click(); }
+  openFromHash(); window.addEventListener('hashchange', openFromHash);
+
+  document.querySelectorAll('form[data-kind]').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var bad = Array.prototype.filter.call(form.querySelectorAll('[required]'), function(el){ return el.type === 'checkbox' ? !el.checked : !el.value.trim(); });
+      if (bad.length){ bad[0].focus(); silondisToast('Fill in the required fields.'); return; }
+      var kind = form.getAttribute('data-kind'), data = {};
+      Array.prototype.forEach.call(form.elements, function(el){ if (el.name) data[el.name] = el.type === 'checkbox' ? el.checked : el.value.trim(); });
+      if (kind === 'wholesale' && !/^\d{4}-\d{2}$/.test(data.licenceExpiry)){ document.getElementById('w-exp').focus(); silondisToast('Write the licence expiry as YYYY-MM, for example 2027-06.'); return; }
+      var ref = (kind === 'wholesale' ? 'WA-' : kind === 'tender' ? 'TE-' : 'MSG-') + Date.now().toString(36).toUpperCase().slice(-5);
+      SilondisStore.update(function(s){
+        var rec = Object.assign({ref:ref, kind:kind, status:'new', createdAt:new Date().toISOString()}, data);
+        if (kind === 'wholesale') s.applications.unshift(rec); else s.messages.unshift(rec);
+      });
+      var sent = form.querySelector('.sent');
+      sent.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg><div><b>Received. Reference ' + ref + '.</b><br>' + (kind === 'wholesale' ? 'We will verify the licence and call you to set up the account. In this demo the application now waits for approval in the back office.' : 'The team will reply within one working day.') + '</div>';
+      sent.hidden = false; form.reset();
+      sent.setAttribute('tabindex','-1'); sent.focus();
+    });
+  });
+
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var el = document.getElementById(b.getAttribute('data-copy')), txt = el.textContent.trim();
+      var done = function(){ silondisToast('Copied.'); };
+      if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done, function(){ selectText(el); }); } else selectText(el);
+    });
+  });
+  function selectText(el){ var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); silondisToast('Selected. Copy it with your keyboard.'); }
+})();
+</script>
+</body>
+</html>
