@@ -29,7 +29,7 @@
      inner HTML, for sentences whose word order changes around a link or emphasis. */
   var DICT = window.SILONDIS_AM || {}, PATTERNS = window.SILONDIS_AM_PATTERNS || [];
   var ORIG = new WeakMap(), ATTRS = ['placeholder', 'aria-label', 'title', 'alt'];
-  var lang = (function () { try { return localStorage.getItem('silondis-lang') || 'en'; } catch (e) { return 'en'; } })();
+  var lang = (function () { try { return localStorage.getItem('silondis-lang') === 'en' ? 'en' : 'am'; } catch (e) { return 'am'; } })();
   var busy = false;
   function amFor(en) {
     var key = en.replace(/\s+/g, ' ').trim(); if (!key) return null;

@@ -10,7 +10,7 @@
   var D = function () { return Store.get(); };
 
   var S = {
-    view: 'shop', lang: window.SilondisLang ? window.SilondisLang.get() : 'en',
+    view: 'shop', lang: window.SilondisLang ? window.SilondisLang.get() : 'am',
     q: '', cat: 'All', cart: [], rxData: null, rxName: '', slot: 'today-pm', pay: 'telebirr', buyer: '', phone: '', remind: true, placed: null,
     trackNo: '', trackPhone: '', trackResult: null,
     b2bId: '', b2bQty: {}, b2bQ: '', b2bDeals: false,

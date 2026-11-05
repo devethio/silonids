@@ -19,6 +19,8 @@ A static website: no build step, no server, no database. It deploys to Vercel as
 - **Back office:** sales dashboard, order workflow with prescription approval, stock by batch and expiry (FEFO picking, quarantine), receiving by GS1 barcode string, purchasing suggestions and purchase orders, wholesale application approval, messages, EFDA-MVC event export, reset demo data.
 
 ## Languages
+Amharic is the default for visitors without a saved language preference. The language button switches to English or Amharic and remembers the choice across visits. Amharic also works as the default when browser storage is unavailable.
+
 Every page and app screen switches between English and Amharic with the language button. All Amharic text is in `assets/js/i18n-am.js`: the key is the English text, the value is the Amharic. To correct a translation, edit the value; to translate new text, add a line. Text with numbers or names in it (counts, dates, messages) is handled by the patterns at the bottom of that file. Delivery and opening times in Amharic use the Ethiopian clock (4 pm = 10 ሰዓት). Medicine names, batch numbers and GTINs stay in English to match the pack.
 
 ## Demo data
