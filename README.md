@@ -45,7 +45,18 @@ vercel --prod   # publish to production
 ```
 
 **Option C: GitHub**
-Push this folder to a GitHub repository, then in Vercel choose Add New → Project → Import that repository. No build settings are needed.
+Push this folder to a GitHub repository, then in Vercel choose Add New → Project → Import that repository.
+
+Use these project settings:
+- **Root Directory:** the repository root (leave the field empty). `index.html` and `vercel.json` are at the root of this repository, even though the local folder path contains `silondis-site` twice.
+- **Framework Preset:** Other.
+- **Build Command:** empty (no build step).
+- **Install Command:** empty (no dependencies).
+- **Output Directory:** `.`.
+
+`vercel.json` explicitly sets the framework, build, install, and output settings. The Root Directory must still point to the folder containing `index.html` and `vercel.json`.
+
+If an existing deployment fails, check its build logs. Errors about `package.json`, `npm run build`, or a missing `dist` / `public` folder can indicate incorrect build settings. A `404: NOT_FOUND` response can indicate the wrong root or output directory. After pushing this configuration, deploy the new commit; redeploying an older commit will not include the changes.
 
 Custom domain: Project → Settings → Domains → add your domain and follow the DNS steps.
 
